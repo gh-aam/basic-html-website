@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Essential tags/meta tags for SEO -->
+    <title>Basic HTML Website</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A basic HTML website which has home page, projects page, articles page, form based contact page, semantic HTML, navigation bar, and SEO meta tags on each page.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://gh-aam.github.io/basic-html-website/">
+  </head>
+  
+  <body>
+    <header>
+      <!-- Fixed div -->
+      <div class="fixed">
+        <!-- Logo and name -->
+        <ul class="ln">
+          <li><img src="/logo.png" width="48px" height="48px" alt="Website logo"></li>
+          <li>Abdullah Al Mamun</li>
+        </ul>
+        
+        <!-- Navigation bar -->
+        <ul class="nav-bar">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/articles.html">Articles</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Dynamic div -->
+      <div class="dynamic">
+        <h1 class="style-font">Contact</h1>
+      </div>
+    </header>
+    
+    <main>
+      <section class="contact">
+        <form action="/submit_form.txt" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <p class="style-font">&copy; 2025 Abdullah Al Mamun. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
